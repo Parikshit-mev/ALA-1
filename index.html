@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Buttons with Gradient Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Gradient background */
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button-link {
+            text-decoration: none;
+        }
+
+        .button {
+            padding: 15px 30px;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            outline: none;
+            display: inline-block;
+        }
+
+        #button1 {
+            background-color: #ff6347;
+        }
+
+        #button2 {
+            background-color: #4caf50;
+        }
+
+        #button3 {
+            background-color: #007bff;
+        }
+
+        /* Button 1 Animation */
+        #button1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button 2 Animation */
+        #button2:hover {
+            background-color: #3e8e41;
+            border-radius: 50px;
+        }
+
+        /* Button 3 Animation */
+        #button3:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="Task_1.html" class="button-link">
+            <button class="button" id="button1">Button 1</button>
+        </a>
+        <a href="Task_2.html" class="button-link">
+            <button class="button" id="button2">Button 2</button>
+        </a>
+        <a href="Task_3.html" class="button-link">
+            <button class="button" id="button3">Button 3</button>
+        </a>
+    </div>
+
+    <script>
+        // Optional JavaScript functionality, if needed
+        console.log("Buttons with animations are loaded");
+    </script>
+</body>
+</html>
